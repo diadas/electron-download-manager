@@ -1,10 +1,10 @@
 'use strict';
 const path = require('path');
 const electron = require('electron');
-const { BrowserWindow, net } = electron;
+const { BrowserWindow, net } = electron.remote;
 const fs = require('fs');
 
-const app = electron.app;
+const app = electron.remote.app;
 let downloadFolder = app.getPath('downloads');
 let lastWindowCreated;
 
